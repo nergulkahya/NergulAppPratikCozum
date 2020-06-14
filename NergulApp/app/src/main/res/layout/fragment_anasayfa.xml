@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".HakkindaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6EEE3"
+        android:scrollbars="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButtonYemek"
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/yemek"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonGiysi"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonGiysi" />
+
+        <ImageButton
+            android:id="@+id/imageButtonOtomobil"
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/taksi"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonSaglik"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonSaglik"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonSaglik" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSaglik"
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/saglik"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonGiysi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGiysi"
+            android:layout_width="360dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/kiyafet"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonYemek"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonSaglik"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonSaglik" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/anasayfaFragment">
+    <fragment
+        android:id="@+id/otomobilFragment"
+        android:name="com.nergul.nergulapp.OtoFragment"
+        android:label="Otomobiller"
+        tools:layout="@layout/fragment_otomobil" />
+    <fragment
+        android:id="@+id/giysilerFragment"
+        android:name="com.nergul.nergulapp.GiysiFragment"
+        android:label="Kıyafetler"
+        tools:layout="@layout/fragment_giysiler" />
+    <fragment
+        android:id="@+id/mutfakFragment"
+        android:name="com.nergul.nergulapp.MutfakFragment"
+        android:label="Mutfak"
+        tools:layout="@layout/fragment_mutfak" />
+    <fragment
+        android:id="@+id/saglikFragment"
+        android:name="com.nergul.nergulapp.SaglikFragment"
+        android:label="Sağlık"
+        tools:layout="@layout/fragment_saglik" />
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.nergul.nergulapp.AnasayfaFragment"
+        android:label="Genel Bilgiler"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/hakkindaFragment"
+        android:name="com.nergul.nergulapp.HakkindaFragment"
+        android:label="Hakkında"
+        tools:layout="@layout/fragment_hakkinda" />
+</navigation>
